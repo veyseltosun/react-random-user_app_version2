@@ -1,7 +1,8 @@
 import React from 'react'
 import Email from "./Email"
-import Phone from "./Phone";
+// import Phone from "./Phone";
 import Location from "./Location";
+import phone from "../assets/phone.svg";
 import axios from 'axios';
 import {useState, useEffect} from "react";
 import "./Card.css"
@@ -44,17 +45,17 @@ const Card = () => {
                 
             </div>
             <div className='user-email'>
-                <Email/>
+                <Email className="email"/>
                 <p className='info'>{user.email}</p>
 
             </div>
             <div className='user-phone'>
-                <Phone/>
+                <img className='phone' src={phone} alt="phone icon"/>
                 <p className='info'>{user.phone}</p>
 
             </div>
             <div className='user-location'>
-                <Location/>
+                <Location className="location"/>
                 <p className='info'>{user.location?.city} / {user.location?.country}</p>
 
             </div>
