@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.App{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    font-size: 1.3rem;
+    color: #fff;
+
+}
+
+.image-title-box {
+    display: flex;
+    align-items: center;
+}
+.img {
+    border-radius: 50%;
+
+}
+
+.card {
+
+    height: 500px;
+    background: linear-gradient(to right, #0052d4);
+
+}
